@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>G-Less Deck Compendium</title>
+  <meta name="description" content="A visual atlas of G-era Cardfight decks — six nations, no G-units." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="sr-only" href="#catalog">Skip to catalog</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-top">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">☀</span>
+          <span>
+            <span class="brand-title">G-Less Deck Compendium</span>
+          </span>
+        </a>
+        <label class="search-wrap">
+          <span class="sr-only">Search decks</span>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Search decks, clans…" autocomplete="off" />
+          <button type="button" id="search-clear" class="search-clear" aria-label="Clear search">×</button>
+        </label>
+      </div>
+      <nav class="nation-nav" aria-label="Nations">
+        <a class="nation-chip" href="#united-sanctuary" data-nation="united-sanctuary" data-active="false"><img src="art/nations/united-sanctuary.png" alt="" /><span>United Sanctuary</span></a>
+        <a class="nation-chip" href="#dragon-empire" data-nation="dragon-empire" data-active="false"><img src="art/nations/dragon-empire.png" alt="" /><span>Dragon Empire</span></a>
+        <a class="nation-chip" href="#star-gate" data-nation="star-gate" data-active="false"><img src="art/nations/star-gate.png" alt="" /><span>Star Gate</span></a>
+        <a class="nation-chip" href="#dark-zone" data-nation="dark-zone" data-active="false"><img src="art/nations/dark-zone.png" alt="" /><span>Dark Zone</span></a>
+        <a class="nation-chip" href="#magallanica" data-nation="magallanica" data-active="false"><img src="art/nations/magallanica.png" alt="" /><span>Magallanica</span></a>
+        <a class="nation-chip" href="#zoo" data-nation="zoo" data-active="false"><img src="art/nations/zoo.png" alt="" /><span>Zoo</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <h1 id="top">G-Less Deck Compendium</h1>
+      <p class="hero-lead">
+        Below are sample decklists centered around the several themes from Vanguard's G era available in G-Less.<br>
+        These sample lists are designed as starting points of each strategy. <br>
+	Changing and customizing these lists are recommended and encouraged.
+      </p>
+    </section>
+
+    <div class="catalog" id="catalog">
+      <p id="search-status" class="search-status" aria-live="polite"></p>
+      <div id="empty-state" class="empty">
+        <h2>No matching decks</h2>
+        <p>Try another name, clan, or nation.</p>
+        <button type="button" id="reset-search">Reset search</button>
+      </div>
+
+      <!-- ========== United Sanctuary ========== -->
+      <section class="nation-page" id="united-sanctuary" data-nation="united-sanctuary">
+        <header class="nation-heading">
+          <img src="art/nations/united-sanctuary.png" alt="" />
+          <h2>United Sanctuary</h2>
+          <img src="art/nations/united-sanctuary.png" alt="" />
+        </header>
+        <div class="clan-grid">
+
+          <article class="clan" data-clan="royal-paladin">
+            <div class="clan-head">
+              <img src="art/emblems/royal-paladin.png" alt="" />
+              <h3>Royal Paladin</h3>
+              <p>A knight order which gains strength from their allies</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/3CH6B" data-name="Majesty Lord Blaster" data-img="art/decks/majesty-lord-blaster.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Royal Paladin" data-clan-blurb="A knight order which gains strength from their allies" data-clan-emblem="art/emblems/royal-paladin.png"><img src="art/decks/majesty-lord-blaster.png" alt="Majesty Lord Blaster" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/375QT" data-name="Jewel Knight" data-img="art/decks/jewel-knight.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Royal Paladin" data-clan-blurb="A knight order which gains strength from their allies" data-clan-emblem="art/emblems/royal-paladin.png"><img src="art/decks/jewel-knight.png" alt="Jewel Knight" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/14CK9" data-name="Sanctuary Guard" data-img="art/decks/sanctuary-guard.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Royal Paladin" data-clan-blurb="A knight order which gains strength from their allies" data-clan-emblem="art/emblems/royal-paladin.png"><img src="art/decks/sanctuary-guard.png" alt="Sanctuary Guard" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/4W7YP" data-name="Altmile" data-img="art/decks/altmile.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Royal Paladin" data-clan-blurb="A knight order which gains strength from their allies" data-clan-emblem="art/emblems/royal-paladin.png"><img src="art/decks/altmile.png" alt="Altmile" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="oracle-think-tank">
+            <div class="clan-head">
+              <img src="art/emblems/oracle-think-tank.png" alt="" />
+              <h3>Oracle Think Tank</h3>
+              <p>Diviners which draw and manipulate the deck</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/1WSA3" data-name="Tsukuyomi" data-img="art/decks/tsukuyomi.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Oracle Think Tank" data-clan-blurb="Diviners which draw and manipulate the deck" data-clan-emblem="art/emblems/oracle-think-tank.png"><img src="art/decks/tsukuyomi.png" alt="Tsukuyomi" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/6RQWX" data-name="Battle Sister" data-img="art/decks/battle-sister.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Oracle Think Tank" data-clan-blurb="Diviners which draw and manipulate the deck" data-clan-emblem="art/emblems/oracle-think-tank.png"><img src="art/decks/battle-sister.png" alt="Battle Sister" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/5VD35" data-name="Magus" data-img="art/decks/magus.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Oracle Think Tank" data-clan-blurb="Diviners which draw and manipulate the deck" data-clan-emblem="art/emblems/oracle-think-tank.png"><img src="art/decks/magus.png" alt="Magus" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/2CY2D" data-name="Oracle" data-img="art/decks/oracle.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Oracle Think Tank" data-clan-blurb="Diviners which draw and manipulate the deck" data-clan-emblem="art/emblems/oracle-think-tank.png"><img src="art/decks/oracle.png" alt="Oracle" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="angel-feather">
+            <div class="clan-head">
+              <img src="art/emblems/angel-feather.png" alt="" />
+              <h3>Angel Feather</h3>
+              <p>Nurse angels who manipulate cards from their damage</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/21DVS" data-name="Celestial" data-img="art/decks/celestial.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Angel Feather" data-clan-blurb="Nurse angels who manipulate cards from their damage" data-clan-emblem="art/emblems/angel-feather.png"><img src="art/decks/celestial.png" alt="Celestial" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/1ETMM" data-name="Metatron" data-img="art/decks/metatron.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Angel Feather" data-clan-blurb="Nurse angels who manipulate cards from their damage" data-clan-emblem="art/emblems/angel-feather.png"><img src="art/decks/metatron.png" alt="Metatron" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="shadow-paladin">
+            <div class="clan-head">
+              <img src="art/emblems/shadow-paladin.png" alt="" />
+              <h3>Shadow Paladin</h3>
+              <p>A knight order which benefits from sacrificing their allies</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/6QFTR" data-name="Phantom Blaster" data-img="art/decks/phantom-blaster.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Shadow Paladin" data-clan-blurb="A knight order which benefits from sacrificing their allies" data-clan-emblem="art/emblems/shadow-paladin.png"><img src="art/decks/phantom-blaster.png" alt="Phantom Blaster" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/6N263" data-name="Revenger" data-img="art/decks/revenger.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Shadow Paladin" data-clan-blurb="A knight order which benefits from sacrificing their allies" data-clan-emblem="art/emblems/shadow-paladin.png"><img src="art/decks/revenger.png" alt="Revenger" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/4VQ2X" data-name="Raging Form" data-img="art/decks/raging-form.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Shadow Paladin" data-clan-blurb="A knight order which benefits from sacrificing their allies" data-clan-emblem="art/emblems/shadow-paladin.png"><img src="art/decks/raging-form.png" alt="Raging Form" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/2BR7T" data-name="Witch" data-img="art/decks/shadow-witch.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Shadow Paladin" data-clan-blurb="A knight order which benefits from sacrificing their allies" data-clan-emblem="art/emblems/shadow-paladin.png"><img src="art/decks/shadow-witch.png" alt="Witch" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="gold-paladin">
+            <div class="clan-head">
+              <img src="art/emblems/gold-paladin.png" alt="" />
+              <h3>Gold Paladin</h3>
+              <p>A knight order which flood the board with its allies</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/UWBF" data-name="Liberator" data-img="art/decks/liberator.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Gold Paladin" data-clan-blurb="A knight order which calls its allies from the deck frequently" data-clan-emblem="art/emblems/gold-paladin.png"><img src="art/decks/liberator.png" alt="Liberator" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/XZB1" data-name="Ezel" data-img="art/decks/ezel.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Gold Paladin" data-clan-blurb="A knight order which calls its allies from the deck frequently" data-clan-emblem="art/emblems/gold-paladin.png"><img src="art/decks/ezel.png" alt="Ezel" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/1Q4UF" data-name="Bluish Flame" data-img="art/decks/bluish-flame.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Gold Paladin" data-clan-blurb="A knight order which calls its allies from the deck frequently" data-clan-emblem="art/emblems/gold-paladin.png"><img src="art/decks/bluish-flame.png" alt="Bluish Flame" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="genesis">
+            <div class="clan-head">
+              <img src="art/emblems/genesis.png" alt="" />
+              <h3>Genesis</h3>
+              <p>Deities that expend plenty of Soul for powerful effects</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/66YH5" data-name="Regalia" data-img="art/decks/regalia.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Genesis" data-clan-blurb="Deities that spend plenty of Soul for powerful effects" data-clan-emblem="art/emblems/genesis.png"><img src="art/decks/regalia.png" alt="Regalia" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/U1B1" data-name="Witch" data-img="art/decks/genesis-witch.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Genesis" data-clan-blurb="Deities that spend plenty of Soul for powerful effects" data-clan-emblem="art/emblems/genesis.png"><img src="art/decks/genesis-witch.png" alt="Witch" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/7RBKM" data-name="Yatagarasu" data-img="art/decks/yatagarasu.png" data-nation="united-sanctuary" data-nation-name="United Sanctuary" data-clan-name="Genesis" data-clan-blurb="Deities that spend plenty of Soul for powerful effects" data-clan-emblem="art/emblems/genesis.png"><img src="art/decks/yatagarasu.png" alt="Yatagarasu" loading="lazy" /></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== Dragon Empire ========== -->
+      <section class="nation-page" id="dragon-empire" data-nation="dragon-empire">
+        <header class="nation-heading">
+          <img src="art/nations/dragon-empire.png" alt="" />
+          <h2>Dragon Empire</h2>
+          <img src="art/nations/dragon-empire.png" alt="" />
+        </header>
+        <div class="clan-grid">
+
+          <article class="clan" data-clan="kagero">
+            <div class="clan-head">
+              <img src="art/emblems/kagero.png" alt="" />
+              <h3>Kagero</h3>
+              <p>An aggressive troop of dragons which destroy the opponent's allies</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/WNUT" data-name="Overlord" data-img="art/decks/overlord.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Kagero" data-clan-blurb="An aggressive troop of dragons which destroy the opponent's allies" data-clan-emblem="art/emblems/kagero.png"><img src="art/decks/overlord.png" alt="Overlord" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/46025" data-name="Seal Dragon" data-img="art/decks/seal-dragon.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Kagero" data-clan-blurb="An aggressive troop of dragons which destroy the opponent's allies" data-clan-emblem="art/emblems/kagero.png"><img src="art/decks/seal-dragon.png" alt="Seal Dragon" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="nubatama">
+            <div class="clan-head">
+              <img src="art/emblems/nubatama.png" alt="" />
+              <h3>Nubatama</h3>
+              <p>Ninja dragons that finish off an opponent crippled by relentless sabotage</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/5CY5D" data-name="Shura Stealth Midrange" data-img="art/decks/shura-stealth-midrange.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Nubatama" data-clan-blurb="Ninja dragons that finish off an opponent crippled by relentless sabotage" data-clan-emblem="art/emblems/nubatama.png"><img src="art/decks/shura-stealth-midrange.png" alt="Shura Stealth Midrange" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/56N4P" data-name="Shura Stealth Legion" data-img="art/decks/shura-stealth-legion.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Nubatama" data-clan-blurb="Ninja dragons that finish off an opponent crippled by relentless sabotage" data-clan-emblem="art/emblems/nubatama.png"><img src="art/decks/shura-stealth-legion.png" alt="Shura Stealth Legion" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/5JQE3" data-name="Shiranui" data-img="art/decks/shiranui.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Nubatama" data-clan-blurb="Ninja dragons that finish off an opponent crippled by relentless sabotage" data-clan-emblem="art/emblems/nubatama.png"><img src="art/decks/shiranui.png" alt="Shiranui" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="tachikaze">
+            <div class="clan-head">
+              <img src="art/emblems/tachikaze.png" alt="" />
+              <h3>Tachikaze</h3>
+              <p>Dinosaur dragons that consume each other for powerful effects</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/7HDQL" data-name="Rex" data-img="art/decks/rex.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Tachikaze" data-clan-blurb="Dinosaur dragons that consume each other for powerful effects" data-clan-emblem="art/emblems/tachikaze.png"><img src="art/decks/rex.png" alt="Rex" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/4R3YK" data-name="Spino" data-img="art/decks/spino.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Tachikaze" data-clan-blurb="Dinosaur dragons that consume each other for powerful effects" data-clan-emblem="art/emblems/tachikaze.png"><img src="art/decks/spino.png" alt="Spino" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="murakumo">
+            <div class="clan-head">
+              <img src="art/emblems/murakumo.png" alt="" />
+              <h3>Murakumo</h3>
+              <p>Samurai and shinobi which perplex the opponent with trickery</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/43NUB" data-name="Dueling Dragon" data-img="art/decks/dueling-dragon.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Murakumo" data-clan-blurb="Samurai and shinobi which perplex the opponent with trickery" data-clan-emblem="art/emblems/murakumo.png"><img src="art/decks/dueling-dragon.png" alt="Dueling Dragon" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/1CTQX" data-name="Hyakki" data-img="art/decks/hyakki.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Murakumo" data-clan-blurb="Samurai and shinobi which perplex the opponent with trickery" data-clan-emblem="art/emblems/murakumo.png"><img src="art/decks/hyakki.png" alt="Hyakki" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="narukami">
+            <div class="clan-head">
+              <img src="art/emblems/narukami.png" alt="" />
+              <h3>Narukami</h3>
+              <p>Thunderous dragons who sweep multiple enemies at once and thoroughly remove them</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/2BJBV" data-name="Descendant" data-img="art/decks/descendant.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Narukami" data-clan-blurb="Thunderous dragons who aim to annihilate everything" data-clan-emblem="art/emblems/narukami.png"><img src="art/decks/descendant.png" alt="Descendant" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/67L27" data-name="Brawler" data-img="art/decks/brawler.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Narukami" data-clan-blurb="Thunderous dragons who aim to annihilate everything" data-clan-emblem="art/emblems/narukami.png"><img src="art/decks/brawler.png" alt="Brawler" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/211Z9" data-name="Vanquisher" data-img="art/decks/vanquisher.png" data-nation="dragon-empire" data-nation-name="Dragon Empire" data-clan-name="Narukami" data-clan-blurb="Thunderous dragons who aim to annihilate everything" data-clan-emblem="art/emblems/narukami.png"><img src="art/decks/vanquisher.png" alt="Vanquisher" loading="lazy" /></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== Star Gate ========== -->
+      <section class="nation-page" id="star-gate" data-nation="star-gate">
+        <header class="nation-heading">
+          <img src="art/nations/star-gate.png" alt="" />
+          <h2>Star Gate</h2>
+          <img src="art/nations/star-gate.png" alt="" />
+        </header>
+        <div class="clan-grid">
+
+          <article class="clan" data-clan="nova-grappler">
+            <div class="clan-head">
+              <img src="art/emblems/nova-grappler.png" alt="" />
+              <h3>Nova Grappler</h3>
+              <p>Battle robots which relentlessly attack the opponent with numerous strikes</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/4R1M1" data-name="Ethics Buster &quot;Reverse&quot;" data-img="art/decks/ethics-buster-reverse.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Nova Grappler" data-clan-blurb="Battle robots which relentlessly attack the opponent with numerous strikes" data-clan-emblem="art/emblems/nova-grappler.png"><img src="art/decks/ethics-buster-reverse.png" alt="Ethics Buster &quot;Reverse&quot;" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/5WYXB" data-name="Ethics Buster Extreme" data-img="art/decks/ethics-buster-extreme.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Nova Grappler" data-clan-blurb="Battle robots which relentlessly attack the opponent with numerous strikes" data-clan-emblem="art/emblems/nova-grappler.png"><img src="art/decks/ethics-buster-extreme.png" alt="Ethics Buster Extreme" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/6ZZ7V" data-name="Blau" data-img="art/decks/blau.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Nova Grappler" data-clan-blurb="Battle robots which relentlessly attack the opponent with numerous strikes" data-clan-emblem="art/emblems/nova-grappler.png"><img src="art/decks/blau.png" alt="Blau" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/63PP5" data-name="Raizer" data-img="art/decks/raizer.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Nova Grappler" data-clan-blurb="Battle robots which relentlessly attack the opponent with numerous strikes" data-clan-emblem="art/emblems/nova-grappler.png"><img src="art/decks/raizer.png" alt="Raizer" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="dimension-police">
+            <div class="clan-head">
+              <img src="art/emblems/dimension-police.png" alt="" />
+              <h3>Dimension Police</h3>
+              <p>Mobile mech suits who crush evil with a singular unstoppable strike</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/29G9H" data-name="Dimensional Robo" data-img="art/decks/dimensional-robo.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Dimension Police" data-clan-blurb="Mobile mech suits who crush evil with a singular unstoppable strike" data-clan-emblem="art/emblems/dimension-police.png"><img src="art/decks/dimensional-robo.png" alt="Dimensional Robo" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/5113M" data-name="Enigman" data-img="art/decks/enigman.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Dimension Police" data-clan-blurb="Mobile mech suits who crush evil with a singular unstoppable strike" data-clan-emblem="art/emblems/dimension-police.png"><img src="art/decks/enigman.png" alt="Enigman" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/6XJTM" data-name="Metalborg" data-img="art/decks/metalborg.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Dimension Police" data-clan-blurb="Mobile mech suits who crush evil with a singular unstoppable strike" data-clan-emblem="art/emblems/dimension-police.png"><img src="art/decks/metalborg.png" alt="Metalborg" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/V2UB" data-name="Zeal" data-img="art/decks/zeal.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Dimension Police" data-clan-blurb="Mobile mech suits who crush evil with a singular unstoppable strike" data-clan-emblem="art/emblems/dimension-police.png"><img src="art/decks/zeal.png" alt="Zeal" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="link-joker">
+            <div class="clan-head">
+              <img src="art/emblems/link-joker.png" alt="" />
+              <h3>Link Joker</h3>
+              <p>Otherworldly invaders that use mysterious powers to impair the opponent</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/23L19" data-name="Chaos Breaker" data-img="art/decks/chaos-breaker.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Link Joker" data-clan-blurb="Otherworldly invaders that use mysterious powers to impair the opponent" data-clan-emblem="art/emblems/link-joker.png"><img src="art/decks/chaos-breaker.png" alt="Chaos Breaker" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/29W1Z" data-name="Infinite" data-img="art/decks/infinite.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Link Joker" data-clan-blurb="Otherworldly invaders that use mysterious powers to impair the opponent" data-clan-emblem="art/emblems/link-joker.png"><img src="art/decks/infinite.png" alt="Infinite" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/4Z24T" data-name="Omega Glendios" data-img="art/decks/omega-glendios.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Link Joker" data-clan-blurb="Otherworldly invaders that use mysterious powers to impair the opponent" data-clan-emblem="art/emblems/link-joker.png"><img src="art/decks/omega-glendios.png" alt="Omega Glendios" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/7XA11" data-name="Deletor" data-img="art/decks/deletor.png" data-nation="star-gate" data-nation-name="Star Gate" data-clan-name="Link Joker" data-clan-blurb="Otherworldly invaders that use mysterious powers to impair the opponent" data-clan-emblem="art/emblems/link-joker.png"><img src="art/decks/deletor.png" alt="Deletor" loading="lazy" /></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== Dark Zone ========== -->
+      <section class="nation-page" id="dark-zone" data-nation="dark-zone">
+        <header class="nation-heading">
+          <img src="art/nations/dark-zone.png" alt="" />
+          <h2>Dark Zone</h2>
+          <img src="art/nations/dark-zone.png" alt="" />
+        </header>
+        <div class="clan-grid">
+
+          <article class="clan" data-clan="spike-brothers">
+            <div class="clan-head">
+              <img src="art/emblems/spike-brothers.png" alt="" />
+              <h3>Spike Brothers</h3>
+              <p>A demonic football team that rush down the opponent with explosive plays</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/5NNDM" data-name="Dudley" data-img="art/decks/dudley.png" data-nation="dark-zone" data-nation-name="Dark Zone" data-clan-name="Spike Brothers" data-clan-blurb="A demonic football team that rush down the opponent with explosive plays" data-clan-emblem="art/emblems/spike-brothers.png"><img src="art/decks/dudley.png" alt="Dudley" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/5A2C7" data-name="Ogle Legion" data-img="art/decks/ogle-legion.png" data-nation="dark-zone" data-nation-name="Dark Zone" data-clan-name="Spike Brothers" data-clan-blurb="A demonic football team that rush down the opponent with explosive plays" data-clan-emblem="art/emblems/spike-brothers.png"><img src="art/decks/ogle-legion.png" alt="Ogle Legion" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="dark-irregulars">
+            <div class="clan-head">
+              <img src="art/emblems/dark-irregulars.png" alt="" />
+              <h3>Dark Irregulars</h3>
+              <p>Demons who accumulate Soul to unlock their powers after a certain threshold</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/Z3H6" data-name="Amon" data-img="art/decks/amon.png" data-nation="dark-zone" data-nation-name="Dark Zone" data-clan-name="Dark Irregulars" data-clan-blurb="Demons who accumulate Soul to unlock their powers after a certain threshold" data-clan-emblem="art/emblems/dark-irregulars.png"><img src="art/decks/amon.png" alt="Amon" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/2368T" data-name="Blade Wing" data-img="art/decks/blade-wing.png" data-nation="dark-zone" data-nation-name="Dark Zone" data-clan-name="Dark Irregulars" data-clan-blurb="Demons who accumulate Soul to unlock their powers after a certain threshold" data-clan-emblem="art/emblems/dark-irregulars.png"><img src="art/decks/blade-wing.png" alt="Blade Wing" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/3HQ91" data-name="Scharhrot" data-img="art/decks/scharhrot.png" data-nation="dark-zone" data-nation-name="Dark Zone" data-clan-name="Dark Irregulars" data-clan-blurb="Demons who accumulate Soul to unlock their powers after a certain threshold" data-clan-emblem="art/emblems/dark-irregulars.png"><img src="art/decks/scharhrot.png" alt="Scharhrot" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="pale-moon">
+            <div class="clan-head">
+              <img src="art/emblems/pale-moon.png" alt="" />
+              <h3>Pale Moon</h3>
+              <p>A magical circus that makes a spectacle from its Soul by filling and calling allies from it</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/3YL5D" data-name="Nightmare Doll" data-img="art/decks/nightmare-doll.png" data-nation="dark-zone" data-nation-name="Dark Zone" data-clan-name="Pale Moon" data-clan-blurb="A magical circus that makes a spectacle from its Soul by filling and calling allies from it" data-clan-emblem="art/emblems/pale-moon.png"><img src="art/decks/nightmare-doll.png" alt="Nightmare Doll" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/7U50P" data-name="Luquier" data-img="art/decks/luquier.png" data-nation="dark-zone" data-nation-name="Dark Zone" data-clan-name="Pale Moon" data-clan-blurb="A magical circus that makes a spectacle from its Soul by filling and calling allies from it" data-clan-emblem="art/emblems/pale-moon.png"><img src="art/decks/luquier.png" alt="Luquier" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="gear-chronicle">
+            <div class="clan-head">
+              <img src="art/emblems/gear-chronicle.png" alt="" />
+              <h3>Gear Chronicle</h3>
+              <p>Steampunk time travelers that utilize the time flow for their benefit</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/2B6WX" data-name="Chronofang" data-img="art/decks/chronofang.png" data-nation="dark-zone" data-nation-name="Dark Zone" data-clan-name="Gear Chronicle" data-clan-blurb="Steampunk time travelers that utilize the time flow for their benefit" data-clan-emblem="art/emblems/gear-chronicle.png"><img src="art/decks/chronofang.png" alt="Chronofang" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/1D8DR" data-name="Slow Divider Legion" data-img="art/decks/slow-divider-legion.png" data-nation="dark-zone" data-nation-name="Dark Zone" data-clan-name="Gear Chronicle" data-clan-blurb="Steampunk time travelers that utilize the time flow for their benefit" data-clan-emblem="art/emblems/gear-chronicle.png"><img src="art/decks/slow-divider-legion.png" alt="Slow Divider Legion" loading="lazy" /></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== Magallanica ========== -->
+      <section class="nation-page" id="magallanica" data-nation="magallanica">
+        <header class="nation-heading">
+          <img src="art/nations/magallanica.png" alt="" />
+          <h2>Magallanica</h2>
+          <img src="art/nations/magallanica.png" alt="" />
+        </header>
+        <div class="clan-grid">
+
+          <article class="clan" data-clan="granblue">
+            <div class="clan-head">
+              <img src="art/emblems/granblue.png" alt="" />
+              <h3>Granblue</h3>
+              <p>Undead pirates who specialize in reviving themselves from the drop</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/6RG0C" data-name="Seven Seas" data-img="art/decks/seven-seas.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Granblue" data-clan-blurb="Undead pirates who specialize in reviving themselves from the drop" data-clan-emblem="art/emblems/granblue.png"><img src="art/decks/seven-seas.png" alt="Seven Seas" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/4HKEF" data-name="Ghostie" data-img="art/decks/ghostie.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Granblue" data-clan-blurb="Undead pirates who specialize in reviving themselves from the drop" data-clan-emblem="art/emblems/granblue.png"><img src="art/decks/ghostie.png" alt="Ghostie" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="bermuda-triangle">
+            <div class="clan-head">
+              <img src="art/emblems/bermuda-triangle.png" alt="" />
+              <h3>Bermuda Triangle</h3>
+              <p>A school of idol-aspiring mermaids that add their unique touch to returning allies to hand</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/2EQ39" data-name="Riviere" data-img="art/decks/riviere.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Bermuda Triangle" data-clan-blurb="A school of idol-aspiring mermaids that add their unique touch to returning allies to hand" data-clan-emblem="art/emblems/bermuda-triangle.png"><img src="art/decks/riviere.png" alt="Riviere" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/1Q37Z" data-name="Raindear" data-img="art/decks/raindear.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Bermuda Triangle" data-clan-blurb="A school of idol-aspiring mermaids that add their unique touch to returning allies to hand" data-clan-emblem="art/emblems/bermuda-triangle.png"><img src="art/decks/raindear.png" alt="Raindear" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/235HR" data-name="Pacifica" data-img="art/decks/pacifica.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Bermuda Triangle" data-clan-blurb="A school of idol-aspiring mermaids that add their unique touch to returning allies to hand" data-clan-emblem="art/emblems/bermuda-triangle.png"><img src="art/decks/pacifica.png" alt="Pacifica" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/7G0C7" data-name="Coral" data-img="art/decks/coral.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Bermuda Triangle" data-clan-blurb="A school of idol-aspiring mermaids that add their unique touch to returning allies to hand" data-clan-emblem="art/emblems/bermuda-triangle.png"><img src="art/decks/coral.png" alt="Coral" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/4KK59" data-name="Meer" data-img="art/decks/meer.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Bermuda Triangle" data-clan-blurb="A school of idol-aspiring mermaids that add their unique touch to returning allies to hand" data-clan-emblem="art/emblems/bermuda-triangle.png"><img src="art/decks/meer.png" alt="Meer" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/75CH5" data-name="Reit" data-img="art/decks/reit.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Bermuda Triangle" data-clan-blurb="A school of idol-aspiring mermaids that add their unique touch to returning allies to hand" data-clan-emblem="art/emblems/bermuda-triangle.png"><img src="art/decks/reit.png" alt="Reit" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/3G63Z" data-name="Alk" data-img="art/decks/alk.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Bermuda Triangle" data-clan-blurb="A school of idol-aspiring mermaids that add their unique touch to returning allies to hand" data-clan-emblem="art/emblems/bermuda-triangle.png"><img src="art/decks/alk.png" alt="Alk" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/343M5" data-name="Harmony" data-img="art/decks/harmony.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Bermuda Triangle" data-clan-blurb="A school of idol-aspiring mermaids that add their unique touch to returning allies to hand" data-clan-emblem="art/emblems/bermuda-triangle.png"><img src="art/decks/harmony.png" alt="Harmony" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/14SHM" data-name="Chouchou" data-img="art/decks/chouchou.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Bermuda Triangle" data-clan-blurb="A school of idol-aspiring mermaids that add their unique touch to returning allies to hand" data-clan-emblem="art/emblems/bermuda-triangle.png"><img src="art/decks/chouchou.png" alt="Chouchou" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/6ZYAX" data-name="PRISM" data-img="art/decks/prism.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Bermuda Triangle" data-clan-blurb="A school of idol-aspiring mermaids that add their unique touch to returning allies to hand" data-clan-emblem="art/emblems/bermuda-triangle.png"><img src="art/decks/prism.png" alt="PRISM" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="aqua-force">
+            <div class="clan-head">
+              <img src="art/emblems/aqua-force.png" alt="" />
+              <h3>Aqua Force</h3>
+              <p>A subaquatic navy that tactically barrages the opponent with multiple orderly attacks</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/UTJR" data-name="Maelstrom" data-img="art/decks/maelstrom.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Aqua Force" data-clan-blurb="A subaquatic navy that tactically barrages the opponent with multiple orderly attacks" data-clan-emblem="art/emblems/aqua-force.png"><img src="art/decks/maelstrom.png" alt="Maelstrom" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/4WA5V" data-name="Blue Storm Legion" data-img="art/decks/blue-storm-legion.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Aqua Force" data-clan-blurb="A subaquatic navy that tactically barrages the opponent with multiple orderly attacks" data-clan-emblem="art/emblems/aqua-force.png"><img src="art/decks/blue-storm-legion.png" alt="Blue Storm Legion" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/59UKM" data-name="Blue Wave" data-img="art/decks/blue-wave.png" data-nation="magallanica" data-nation-name="Magallanica" data-clan-name="Aqua Force" data-clan-blurb="A subaquatic navy that tactically barrages the opponent with multiple orderly attacks" data-clan-emblem="art/emblems/aqua-force.png"><img src="art/decks/blue-wave.png" alt="Blue Wave" loading="lazy" /></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== Zoo ========== -->
+      <section class="nation-page" id="zoo" data-nation="zoo">
+        <header class="nation-heading">
+          <img src="art/nations/zoo.png" alt="" />
+          <h2>Zoo</h2>
+          <img src="art/nations/zoo.png" alt="" />
+        </header>
+        <div class="clan-grid">
+
+          <article class="clan" data-clan="megacolony">
+            <div class="clan-head">
+              <img src="art/emblems/megacolony.png" alt="" />
+              <h3>Megacolony</h3>
+              <p>A criminal organization of insects that slowly whittle down a paralyzed opponent</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/3Q7B9" data-name="Machining" data-img="art/decks/machining.png" data-nation="zoo" data-nation-name="Zoo" data-clan-name="Megacolony" data-clan-blurb="A criminal organization of insects that slowly whittle down a paralyzed opponent" data-clan-emblem="art/emblems/megacolony.png"><img src="art/decks/machining.png" alt="Machining" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/35H91" data-name="Darkface Giraffa" data-img="art/decks/darkface-giraffa.png" data-nation="zoo" data-nation-name="Zoo" data-clan-name="Megacolony" data-clan-blurb="A criminal organization of insects that slowly whittle down a paralyzed opponent" data-clan-emblem="art/emblems/megacolony.png"><img src="art/decks/darkface-giraffa.png" alt="Darkface Giraffa" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="great-nature">
+            <div class="clan-head">
+              <img src="art/emblems/great-nature.png" alt="" />
+              <h3>Great Nature</h3>
+              <p>An academia of animals that empower their allies for a powerful strike before retiring</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/2C4HF" data-name="Honorary Professor" data-img="art/decks/honorary-professor.png" data-nation="zoo" data-nation-name="Zoo" data-clan-name="Great Nature" data-clan-blurb="An academia of animals that empower their allies for a powerful strike before retiring" data-clan-emblem="art/emblems/great-nature.png"><img src="art/decks/honorary-professor.png" alt="Honorary Professor" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/4PVF5" data-name="Hammsuke" data-img="art/decks/hammsuke.png" data-nation="zoo" data-nation-name="Zoo" data-clan-name="Great Nature" data-clan-blurb="An academia of animals that empower their allies for a powerful strike before retiring" data-clan-emblem="art/emblems/great-nature.png"><img src="art/decks/hammsuke.png" alt="Hammsuke" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/2XY0T" data-name="Polaris" data-img="art/decks/polaris.png" data-nation="zoo" data-nation-name="Zoo" data-clan-name="Great Nature" data-clan-blurb="An academia of animals that empower their allies for a powerful strike before retiring" data-clan-emblem="art/emblems/great-nature.png"><img src="art/decks/polaris.png" alt="Polaris" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/23FGK" data-name="Leo-pald" data-img="art/decks/leo-pald.png" data-nation="zoo" data-nation-name="Zoo" data-clan-name="Great Nature" data-clan-blurb="An academia of animals that empower their allies for a powerful strike before retiring" data-clan-emblem="art/emblems/great-nature.png"><img src="art/decks/leo-pald.png" alt="Leo-pald" loading="lazy" /></a>
+            </div>
+          </article>
+
+          <article class="clan" data-clan="neo-nectar">
+            <div class="clan-head">
+              <img src="art/emblems/neo-nectar.png" alt="" />
+              <h3>Neo Nectar</h3>
+              <p>Plant-based humanoids that grow their allies to bloom into a uniform force</p>
+            </div>
+            <div class="deck-grid">
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/2Z3FB" data-name="Musketeer" data-img="art/decks/musketeer.png" data-nation="zoo" data-nation-name="Zoo" data-clan-name="Neo Nectar" data-clan-blurb="Plant-based humanoids that grow their allies to bloom into a uniform force" data-clan-emblem="art/emblems/neo-nectar.png"><img src="art/decks/musketeer.png" alt="Musketeer" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/1JMMM" data-name="Arboros" data-img="art/decks/arboros.png" data-nation="zoo" data-nation-name="Zoo" data-clan-name="Neo Nectar" data-clan-blurb="Plant-based humanoids that grow their allies to bloom into a uniform force" data-clan-emblem="art/emblems/neo-nectar.png"><img src="art/decks/arboros.png" alt="Arboros" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/2QR79" data-name="Maiden of" data-img="art/decks/maiden-of.png" data-nation="zoo" data-nation-name="Zoo" data-clan-name="Neo Nectar" data-clan-blurb="Plant-based humanoids that grow their allies to bloom into a uniform force" data-clan-emblem="art/emblems/neo-nectar.png"><img src="art/decks/maiden-of.png" alt="Maiden of" loading="lazy" /></a>
+              <a class="deck-tile" target="_blank" rel="noopener noreferrer" href="https://decklog-en.bushiroad.com/view/1SF95" data-name="Bloom" data-img="art/decks/bloom.png" data-nation="zoo" data-nation-name="Zoo" data-clan-name="Neo Nectar" data-clan-blurb="Plant-based humanoids that grow their allies to bloom into a uniform force" data-clan-emblem="art/emblems/neo-nectar.png"><img src="art/decks/bloom.png" alt="Bloom" loading="lazy" /></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="foot-title">G-Less Deck Compendium</p>
+    <p class="foot-note">
+      This website is not produced by, endorsed by, supported by, or affiliated with Bushiroad or Cardfight!! Vanguard.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
