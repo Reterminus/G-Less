@@ -18,7 +18,7 @@
 
   --us: #c9a227;
   --de: #d63c32;
-  --sg: #b8a84a;
+  --sg: #a8a8a8;
   --dz: #8e4eae;
   --mag: #2f7ec4;
   --zoo: #3e9a4e;
@@ -358,7 +358,7 @@ button {
 }
 
 .nation-page {
-  --nation: var(--gold);
+  /*--nation: var(--gold);*/
   -webkit-user-select: none;
   user-select: none;
   scroll-margin-top: 9rem;
