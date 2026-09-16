@@ -640,3 +640,258 @@ button {
     filter: none;
   }
 }
+
+/* ---------- Page nav (Decks / Restrictions) ---------- */
+
+.header-top {
+  flex-wrap: wrap;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.page-link {
+  display: inline-flex;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition:
+    border-color 150ms var(--ease),
+    color 150ms var(--ease),
+    background 150ms var(--ease),
+    box-shadow 150ms var(--ease);
+}
+
+.page-link[aria-current="page"] {
+  color: var(--fg);
+  border-color: color-mix(in oklab, var(--gold) 70%, var(--line));
+  background: color-mix(in oklab, var(--gold) 16%, var(--bg-elevated));
+  box-shadow: 0 0 16px color-mix(in oklab, var(--gold) 22%, transparent);
+}
+
+/* Don't leave a sticky focus glow after clicking a page link */
+.page-link:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .page-link:hover {
+    color: var(--fg);
+    border-color: color-mix(in oklab, var(--gold) 50%, var(--line));
+  }
+}
+
+.page-link:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--gold) 70%, white);
+  outline-offset: 2px;
+}
+
+@media (max-width: 639px) {
+  .search-wrap {
+    flex-basis: 100%;
+    max-width: none;
+    margin-left: 0;
+  }
+}
+
+/* ---------- Restriction tiles (image = full card) ---------- */
+/* All rules here are restriction-only; decks page is unaffected.
+   Tune growth with --restrict-scale only; the status panel tracks it. */
+
+.restrict-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: start;
+}
+
+@media (min-width: 640px) {
+  .restrict-grid {
+    grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  }
+}
+
+.restriction-cell {
+  --restrict-scale: 1.85; /* ← change this to shrink/grow the enlarged card */
+  --restrict-panel-gap: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.restriction-cell:hover,
+.restriction-cell:focus-within,
+.restriction-cell.is-open {
+  z-index: 20;
+}
+
+.restrict-tile {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #111;
+  cursor: zoom-in;
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--nation) 28%, transparent);
+  transform: scale(1);
+  transform-origin: top left;
+  transition:
+    transform 280ms var(--ease),
+    box-shadow 280ms var(--ease),
+    filter 280ms var(--ease);
+}
+
+.restrict-tile img {
+  width: 100%;
+  aspect-ratio: 59 / 86;
+  object-fit: cover;
+  object-position: center top;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .restriction-cell:hover .restrict-tile,
+  .restriction-cell:focus-within .restrict-tile {
+    transform: scale(var(--restrict-scale));
+    filter: brightness(1.04) saturate(1.06);
+    outline: none;
+    box-shadow:
+      0 0 0 2px color-mix(in oklab, var(--nation) 80%, white),
+      0 0 28px color-mix(in oklab, var(--nation) 50%, transparent),
+      0 22px 40px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.restriction-cell.is-open .restrict-tile {
+  transform: scale(var(--restrict-scale));
+  filter: brightness(1.04) saturate(1.06);
+  cursor: zoom-out;
+  box-shadow:
+    0 0 0 2px color-mix(in oklab, var(--nation) 80%, white),
+    0 0 28px color-mix(in oklab, var(--nation) 50%, transparent),
+    0 22px 40px rgba(0, 0, 0, 0.45);
+}
+
+.restrict-tile:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--nation) 70%, white);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .restriction-cell {
+    --restrict-scale: 1.55;
+  }
+}
+
+/* ---- Status panel ----
+   Desktop: always position:absolute so open/close never changes nation-page height.
+   left/right offset = scale × 100% of the tile, so it tracks --restrict-scale. */
+
+.status-drawer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 250ms var(--ease);
+  pointer-events: none;
+}
+
+.status-drawer-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.status-window {
+  padding: 0.65rem 0.75rem 0.7rem;
+  border-radius: 0.65rem;
+  background: #fffaf0;
+  color: var(--page-ink);
+  border: 1px solid color-mix(in oklab, var(--nation) 50%, #d9d0bc);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.status-kicker {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--nation);
+  font-weight: 600;
+}
+
+.status-copy {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--page-ink);
+}
+
+@media (min-width: 560px) {
+  .status-drawer {
+    position: absolute;
+    top: 0;
+    /* Panel sits just past the right edge of the scaled card */
+    left: calc(var(--restrict-scale) * 100% + var(--restrict-panel-gap));
+    width: min(15rem, 42vw);
+    margin: 0;
+    z-index: 25;
+  }
+
+  .restriction-cell.status-left .status-drawer {
+    left: auto;
+    right: calc(var(--restrict-scale) * 100% + var(--restrict-panel-gap));
+  }
+
+  .restriction-cell:hover .status-drawer,
+  .restriction-cell:focus-within .status-drawer,
+  .restriction-cell.is-open .status-drawer {
+    grid-template-rows: 1fr;
+    pointer-events: auto;
+  }
+}
+
+@media (max-width: 559px) {
+  .status-window {
+    margin-top: 0.5rem;
+  }
+
+  .restriction-cell:hover .status-drawer,
+  .restriction-cell:focus-within .status-drawer,
+  .restriction-cell.is-open .status-drawer {
+    grid-template-rows: 1fr;
+    pointer-events: auto;
+  }
+}
+
+.restriction-cell.is-hidden {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .restrict-tile,
+  .status-drawer,
+  .page-link {
+    transition: none !important;
+  }
+  .restriction-cell:hover .restrict-tile,
+  .restriction-cell:focus-within .restrict-tile,
+  .restriction-cell.is-open .restrict-tile {
+    transform: none;
+    filter: none;
+  }
+}
