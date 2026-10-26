@@ -134,17 +134,6 @@
   /* Restriction tiles: click pins enlarge + status; click outside closes */
   const restrictCells = [...document.querySelectorAll(".restriction-cell")];
 
-  /* Prefer status panel on the right; flip left if it would leave the viewport */
-  function updateStatusSide(cell) {
-    if (!cell) return;
-    const rect = cell.getBoundingClientRect();
-    const roomRight = window.innerWidth - rect.left;
-    const scale = parseFloat(getComputedStyle(cell).getPropertyValue("--restrict-scale")) || 2.15;
-    // Scaled card width + ~15rem panel
-    const need = rect.width * scale + 15 * 16;
-    cell.classList.toggle("status-left", roomRight < need && rect.left > need * 0.45);
-  }
-
   function closeAllRestrict(except) {
     restrictCells.forEach((cell) => {
       if (cell === except) return;
@@ -158,13 +147,10 @@
     const tile = cell.querySelector(".restrict-tile");
     if (!tile) return;
 
-    cell.addEventListener("pointerenter", () => updateStatusSide(cell));
-
     tile.addEventListener("click", (e) => {
       e.stopPropagation();
       const willOpen = !cell.classList.contains("is-open");
       closeAllRestrict(willOpen ? cell : null);
-      if (willOpen) updateStatusSide(cell);
       cell.classList.toggle("is-open", willOpen);
       tile.setAttribute("aria-expanded", willOpen ? "true" : "false");
     });
